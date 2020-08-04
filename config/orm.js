@@ -2,7 +2,7 @@ const connection = require('./connection');
 
 const orm = {
   selectAll: function (callback) {
-    connection.query(`SELECT * FROM burgers_db.burgers`,
+    connection.query(`SELECT * FROM burgers`,
       function (err, res) {
         if (err) throw err;
         callback(res);
